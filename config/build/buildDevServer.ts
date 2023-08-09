@@ -5,5 +5,6 @@ export function buildDevServer(options: BuildOptions): DevServerConfigurations {
     return {
         port: options.port,
         open: true,//автоматиечски  открывает страницу в бразере при запуске приложения
+        historyApiFallback: true,
     }
 }
