@@ -1,0 +1,24 @@
+{
+	"ReactComponent": {
+		"prefix": "rc",
+		"body": [
+			"import { Link } from 'react-router-dom';",
+			"import { classNames } from 'shared/lib/classNames/classNames';",
+			"import cls from './${TM_FILENAME_BASE}.module.scss';",
+			"",
+			"interface ${TM_FILENAME_BASE}Props {",
+			"\tclassName?: string;",
+			"}",
+			"",
+			"export const $TM_FILENAME_BASE  = ({ className }: ${TM_FILENAME_BASE}Props) => {",
+			"\treturn (",
+			"\t\t<div className={classNames(cls.${TM_FILENAME_BASE}, {}, [className])}>",
+			"\t\t</div>",
+			"\t)",
+			"}"
+		]
+	},
+	"description": "create react component",
+	"scope": "typescript, typescriptreact"
+}
+}
